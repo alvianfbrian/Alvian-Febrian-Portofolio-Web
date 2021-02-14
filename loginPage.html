@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+
+		<!-- Style -->
+		<style>
+			body {
+				background-image: url("img/duotone2.png");
+				background-size: 100%;
+				background-repeat: no-repeat;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.container {
+				margin: 100px auto;
+				width: 400px;
+				background-color: white;
+				padding: 15px;
+				box-sizing: border-box;
+				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.363);
+			}
+			.login-form {
+				margin: 50px auto;
+				width: 340px;
+				font-size:	15px;
+			}
+			.login-form form {
+				background-color: rgb(247, 247, 247);
+				box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.363);
+				margin-bottom: 25px;
+				padding: 30px;
+			}
+			.login-form h2 {
+				margin: 0 0 25px;
+				text-align: center;
+			}
+			.form-control, .btn-login {
+				margin-bottom: 15px;
+				min-height: 30px;
+				min-width: 100%;
+			}
+			.btn-login{	
+				color: white;
+				background-color: rgb(70, 70, 255);
+				border: none;
+				cursor: pointer;
+				margin-left: 3px;
+			}
+			.btn-login:hover	{
+				background-color: rgb(25, 25, 255);
+			}
+			.clearfix .float-right	{
+				text-decoration: none;
+				padding-left: 32px;
+			}
+			.text-center a{
+				text-decoration: none;
+				margin: 0 0 25px;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="login-form">
+				<form action="#">
+					<h2 class="text-center">Log In</h2>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Username" required="required">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password" required="required">
+					</div>
+					<div class="form-group">
+							<input type="submit" onclick="loginFunction()" class="btn-login" value="Log In"></input>
+					</div>
+					<div class="clearfix">
+						<label class="float-left">
+							<input type="checkbox"> 
+							Remember me
+						</label>
+						<a href="forgotPassword.html" class="float-right">Forgot password?</a>
+					</div>
+				</form>
+				<p class="text-center">
+					<a href="createAccount.html" target="blank">Create an Account</a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+	<!-- Script -->
+	<script>
+		function loginFunction() {	
+			window.location.href="myPage.html"
+		}
+	</script>
+</html>
