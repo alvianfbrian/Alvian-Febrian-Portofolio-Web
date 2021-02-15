@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+label{
+    font-size: 1rem;
+    color: salmon;
+}
+p{
+    color: gray;
+}
+.grey{
+    background-color: #212529;
+}
+.page-header{
+    margin-top: 3.6rem;
+    font-size: 1.25rem;
+}
+.nav-item .active{
+    color: salmon!important;
+}
+.nav-item .active:hover{
+    color: rgb(255, 155, 144)!important;
+}
